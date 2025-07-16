@@ -1,0 +1,12 @@
+<div class="accordion-item">
+    <h2 class="accordion-header">
+      <button (click)="isOpen = !isOpen" class="accordion-button" [class.collapsed]="!isOpen" type="button" aria-expanded="true" aria-controls="collapseOne">
+        {{title}}
+      </button>
+    </h2>
+    <div class="accordion-collapse collapse" [class.show]="isOpen">
+      <div class="accordion-body">
+        <ng-content />
+      </div>
+    </div>
+  </div>
