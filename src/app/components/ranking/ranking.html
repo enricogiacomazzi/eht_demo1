@@ -1,0 +1,9 @@
+
+
+
+<i 
+    *ngMyFor="let i from 0 to 4" 
+    class="fa fa-star fa-2x m-1"
+    [class.on]="i < value()"
+    (click)="clickHandler(i)"
+></i>
