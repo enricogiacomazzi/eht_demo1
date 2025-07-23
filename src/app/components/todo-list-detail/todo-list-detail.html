@@ -1,0 +1,9 @@
+
+
+<dialog [ngModal]="show()">
+    <div>
+        <h3>{{todo()?.text}}</h3>
+        <button (click)="close.emit()" type="button" class="btn btn-secondary">X</button>
+    </div>
+
+</dialog>

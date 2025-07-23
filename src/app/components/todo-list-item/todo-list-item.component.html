@@ -2,6 +2,6 @@
 
 
 <li>
-    <span ngCompleted [done]="done()">{{todo().text}}</span> &nbsp;
+    <span ngCompleted [done]="done()" (click)="selectTodo.emit()">{{todo().text}}</span> &nbsp;
     <button (click)="toggleTodo.emit()">{{btnLabel()}}</button>
 </li>

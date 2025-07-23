@@ -11,5 +11,21 @@
       "lastname": "Blu"
     }
   ],
-  "todos": []
+  "todos": [
+    {
+      "id": "c9d7",
+      "text": "fare la spesa",
+      "done": false
+    },
+    {
+      "id": "ec77",
+      "text": "comprare il latte",
+      "done": true
+    },
+    {
+      "id": "ea7a",
+      "text": "fare aperitivo",
+      "done": false
+    }
+  ]
 }

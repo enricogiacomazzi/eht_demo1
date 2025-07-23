@@ -20,11 +20,12 @@ export class TodoListItemComponent {
     public todo = input.required<TodoModel>();
     public pippo = input.required<boolean>();
     public toggleTodo = output<void>();
+    public selectTodo = output<void>();
     public done = computed(() => this.todo().done);
     public btnLabel = computed(() => this.done() ? 'da fare': 'completa');
 
     private e1 = effect(() => {
-        if(this.todo().id === 2) {
+        if(this.todo().id === '2') {
             console.log('ciao');
         }
     });

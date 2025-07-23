@@ -1,11 +1,24 @@
+
+
 <ul>
-  @for (t of ts.todos; track t.id) {
+  @for (t of todos(); track t.id) {
     <todo-list-item 
         [todo]="t" 
         [pippo]="false" 
         ultimateAnswer="42"
         (toggleTodo)="ts.toggleTodo(t.id)"
+        (selectTodo)="select.set(t.id)"
     />
   }
 </ul>
+
+
+<!-- 
+@if(show()) {
+  <h2>{{todoCount()}}</h2> 
+} -->
+
 <!-- {{render()}} -->
+
+
+<ng-todo-list-detail [todo]="detail()" (close)="select.set(undefined)" />

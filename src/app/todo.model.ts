@@ -2,7 +2,9 @@
 
 
 export interface TodoModel {
-    id: number,
+    id: string,
     text: string,
     done: boolean
 }
+
+export type TodoIdModel = Pick<TodoModel, 'id'>['id'];
