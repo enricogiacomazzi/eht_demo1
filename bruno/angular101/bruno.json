@@ -1,0 +1,9 @@
+{
+  "version": "1",
+  "name": "angular101",
+  "type": "collection",
+  "ignore": [
+    "node_modules",
+    ".git"
+  ]
+}

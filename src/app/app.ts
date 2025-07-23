@@ -4,10 +4,11 @@ import { TemperaturePipe, toFahrenheit } from './pipes/temperature-pipe';
 import { AddUser } from "./components/add-user/add-user";
 import { AddUser2 } from "./components/add-user2/add-user2";
 import { ChangePassword } from "./components/change-password/change-password";
+import { TodoList } from "./components/todo-list/todo-list";
 
 @Component({
   selector: 'ng-root',
-  imports: [AddUser, AddUser2, ChangePassword],
+  imports: [AddUser, AddUser2, ChangePassword, TodoList],
   providers: [TemperaturePipe],
   templateUrl: './app.html',
   styleUrl: './app.scss',

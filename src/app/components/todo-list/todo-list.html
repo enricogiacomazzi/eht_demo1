@@ -2,7 +2,7 @@
   @for (t of ts.todos; track t.id) {
     <todo-list-item 
         [todo]="t" 
-        [pippo]="pippo()" 
+        [pippo]="false" 
         ultimateAnswer="42"
         (toggleTodo)="ts.toggleTodo(t.id)"
     />

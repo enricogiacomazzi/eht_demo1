@@ -11,7 +11,6 @@ import { TodoService } from '../../services/todo.service';
   changeDetection: ChangeDetectionStrategy.OnPush
 })
 export class TodoList {
-  public pippo = input.required<boolean>();
   public ts = inject(TodoService);
 
 
